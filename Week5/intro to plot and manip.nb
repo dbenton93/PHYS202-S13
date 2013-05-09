@@ -1,0 +1,150 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5391,        141]
+NotebookOptionsPosition[      5039,        123]
+NotebookOutlinePosition[      5418,        140]
+CellTagsIndexPosition[      5375,        137]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"a0", " ", "=", "1"}], " ", ";", " ", 
+    RowBox[{"f0", " ", "=", " ", "10"}], ";", " ", 
+    RowBox[{"\[Phi]0", " ", "=", " ", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"A", " ", "=", " ", "3"}], ";", " ", 
+    RowBox[{"f", "=", "3"}], ";", 
+    RowBox[{"\[Phi]", "=", "0"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"A", " ", 
+        RowBox[{"Sin", " ", "[", 
+         RowBox[{
+          RowBox[{"f", " ", "t"}], " ", "-", " ", "\[Phi]"}], "]"}]}], ",", 
+       RowBox[{"a0", " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{
+          RowBox[{"f0", " ", "t"}], " ", "+", " ", "\[Phi]0"}], "]"}]}]}], 
+      "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "10"}], "}"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"A", ",", " ", "a0", ",", " ", "\"\<the amps\>\""}], "}"}], ",",
+      " ", "0", ",", " ", "2"}], "}"}], "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"f", ",", " ", "f0", ",", " ", "\"\<the freq\>\""}], "}"}], ",",
+      " ", "0", ",", " ", "10"}], "}"}], "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Phi]", ",", " ", "\[Phi]0", ",", " ", "\"\<the phase\>\""}], 
+      "}"}], ",", " ", "0", ",", " ", 
+     RowBox[{"2", "Pi"}]}], "}"}]}], " ", "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.5771206832184134`*^9, 3.5771208717978973`*^9}, {
+  3.5771209112362432`*^9, 3.5771209883291283`*^9}, {3.577121023431962*^9, 
+  3.577121031927548*^9}, {3.5771211355313673`*^9, 3.577121135763098*^9}, {
+  3.577121172425727*^9, 3.5771212309353027`*^9}, {3.5771212645430927`*^9, 
+  3.577121282413618*^9}, {3.577121314508326*^9, 3.577121392184762*^9}, {
+  3.577121447494444*^9, 3.5771218293047943`*^9}, {3.577122243737575*^9, 
+  3.577122264463282*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`A$$ = 0.365, $CellContext`f$$ = 
+    6.34, $CellContext`\[Phi]$$ = 0.40212385965949354`, Typeset`show$$ = True,
+     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`A$$], 1, "the amps"}, 0, 2}, {{
+       Hold[$CellContext`f$$], 10, "the freq"}, 0, 10}, {{
+       Hold[$CellContext`\[Phi]$$], 0, "the phase"}, 0, 2 Pi}}, 
+    Typeset`size$$ = {360., {106., 110.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True, $CellContext`A$1351$$ =
+     0, $CellContext`f$1352$$ = 0, $CellContext`\[Phi]$1353$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`A$$ = 1, $CellContext`f$$ = 
+        10, $CellContext`\[Phi]$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`A$$, $CellContext`A$1351$$, 0], 
+        Hold[$CellContext`f$$, $CellContext`f$1352$$, 0], 
+        Hold[$CellContext`\[Phi]$$, $CellContext`\[Phi]$1353$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[{$CellContext`A$$ 
+         Sin[$CellContext`f$$ $CellContext`t - $CellContext`\[Phi]$$], \
+$CellContext`a0 
+         Sin[$CellContext`f0 $CellContext`t + $CellContext`\[Phi]0]}, \
+{$CellContext`t, 0, 10}], 
+      "Specifications" :> {{{$CellContext`A$$, 1, "the amps"}, 0, 
+         2}, {{$CellContext`f$$, 10, "the freq"}, 0, 
+         10}, {{$CellContext`\[Phi]$$, 0, "the phase"}, 0, 2 Pi}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{403., {176., 182.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.5771217313870173`*^9, 3.577121814765794*^9}, {
+  3.577122245481399*^9, 3.577122271108192*^9}}]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{943, 543},
+WindowMargins->{{80, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 22, \
+2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 2084, 50, 148, "Input"],
+Cell[2666, 74, 2357, 46, 375, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
